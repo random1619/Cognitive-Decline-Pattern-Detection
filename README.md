@@ -1,7 +1,7 @@
-# 🧠 Cognitive Stress Detection in Speech
+# 🧠 Speech intelligence module
 
 ## 📝 Overview
-This repository contains a comprehensive Python-based cognitive analysis tool designed to detect stress patterns and abnormalities in speech.  
+This repository contains a comprehensive Python-based speech analysis tool designed to detect speech patterns and abnormalities in speech.  
 The system uses a **multi-modal approach** combining acoustic feature extraction, speech-to-text analysis, and machine learning to identify potential cognitive stress markers in audio samples.
 
 ## 🌟 Features
