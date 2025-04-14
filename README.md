@@ -110,6 +110,4 @@ The pipeline provides:
 
 - 🎙️ Clear audio needed for best results  
 - 🌐 Supports **English only** for now  
-- 📉 Statistical analysis should be interpreted by professionals  
-- 🚫 Not a substitute for medical diagnosis
 
