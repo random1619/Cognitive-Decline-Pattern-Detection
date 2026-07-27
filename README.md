@@ -1,113 +1,58 @@
-# 🧠 Speech intelligence module
+# 🧠 Cognitive Decline Pattern Detection
 
-## 📝 Overview
-This repository contains a comprehensive Python-based speech analysis tool designed to detect speech patterns and abnormalities in speech.  
-The system uses a **multi-modal approach** combining acoustic feature extraction, speech-to-text analysis, and machine learning to identify potential cognitive stress markers in audio samples.
+**Cognitive Decline Pattern Detection** is an AI/ML research pipeline designed to detect cognitive stress markers, speech disfluency, and speech pattern abnormalities using acoustic signal processing, NLP speech-to-text, and machine learning cluster analysis.
 
-## 🌟 Features
-- 🎧 **Audio Feature Extraction**  
-  Analyzes acoustic properties: pitch, speech rate, energy levels, spectral features, MFCCs (Mel-frequency cepstral coefficients)
+---
 
-- 🗣️ **Speech-to-Text Processing**  
-  Converts speech to text for linguistic analysis
+## 🌟 Key Features
 
-- ✍️ **Text Content Analysis**  
-  Analyzes vocabulary richness, hesitation patterns, disfluencies
+- 🎧 **Audio Feature Extraction**: Acoustic property extraction including pitch variations, speech tempo, energy distribution, spectral features, and Mel-frequency cepstral coefficients (MFCCs) using `librosa`.
+- 🗣️ **Speech-to-Text & Linguistic Analysis**: Automated transcription and text content analysis measuring vocabulary richness, pause frequencies, and linguistic disfluencies.
+- ⚠️ **Anomaly & Outlier Detection**: Statistical outlier detection for identifying atypical speech patterns.
+- 🔍 **Cluster Analysis & PCA**: K-Means clustering and Principal Component Analysis (PCA) to map feature spaces and identify cognitive stress states.
+- 📊 **Visual Analytics**: Dynamic feature heatmaps, PCA scatter plots, and stress indicator distribution charts.
 
-- ⚠️ **Anomaly Detection**  
-  Identifies outliers and abnormal speech patterns
+---
 
-- 🔍 **Cluster Analysis**  
-  Groups similar speech patterns to detect cognitive states
-
-- 📊 **Visualization Tools**  
-  Charts and plots for detected patterns and anomalies
-
-- 📋 **Detailed Risk Analysis**  
-  Generates stress indicator reports with confidence metrics
-
-## 🧰 Requirements
-Ensure you have **Python 3.6+** and the following libraries installed:
+## 📁 Repository Structure
 
 ```
-text
-numpy
-pandas
-matplotlib
-scipy
-seaborn
-librosa
-SpeechRecognition
-scikit-learn
+Cognitive-Decline-Pattern-Detection/
+├── Cognitive_analysis.ipynb                # Main Jupyter Notebook pipeline
+├── Cognitive Speech Analysis.pdf           # Technical research documentation & report
+├── Flowchart-Cognitive-Speech-Analysis.png # System pipeline architecture flowchart
+└── audio_samples/                          # Sample dataset audio files (.wav)
 ```
 
-## ⚙️ Installation
+---
 
-Clone the repository:
+## 🧰 Prerequisites & Requirements
 
-```
-git clone https://github.com/yourusername/cognitive-stress-detection.git
-cd cognitive-stress-detection
-```
+Ensure you have **Python 3.8+** installed along with the following packages:
 
-Install the dependencies:
-
-```
-pip install -r requirements.txt
+```bash
+pip install numpy pandas matplotlib scipy seaborn librosa SpeechRecognition scikit-learn
 ```
 
-## ▶️ Usage
+---
 
-🎵 Place `.wav` or `.mp3` files into the `audio_samples` directory.
+## 🚀 Execution & Usage
 
-Run the analysis pipeline:
+1. Open `Cognitive_analysis.ipynb` in **Jupyter Notebook** or **VS Code**:
+   ```bash
+   jupyter notebook Cognitive_analysis.ipynb
+   ```
+2. Execute the notebook cells sequentially to run audio feature extraction, clustering, anomaly detection, and report generation.
 
-```
-python cognitive_analysis.py
-```
+---
 
-Or launch the Jupyter Notebook:
+## 👨‍💻 Author & Contact
 
-```
-jupyter notebook Cognitive_analysis.ipynb
-```
+**Author**: Gagandeep Singh  
+**GitHub**: [@random1619](https://github.com/random1619)
 
-## 🔄 Pipeline Workflow
+---
 
-1. 📂 **Audio Loading** — Load audio from directory  
-2. 🔍 **Feature Extraction** — Extract pitch, MFCCs, etc.  
-3. 🗣️ **Speech-to-Text** — Transcribe speech using Google's API  
-4. ✍️ **Text Analysis** — Extract linguistic markers  
-5. 🧮 **Feature Normalization** — Standardize features  
-6. 📌 **Clustering** — Group similar patterns using K-means  
-7. ⚠️ **Anomaly Detection** — Detect cognitive stress markers  
-8. 📊 **Visualization** — Display charts and visualizations  
-9. 📋 **Risk Analysis** — Generate comprehensive assessment reports
+## 📄 License
 
-## 📈 Example Output
-
-The pipeline provides:
-
-- 🔵 PCA plots of feature clusters  
-- ⚠️ Highlighted anomalies & risk samples  
-- 🔥 Feature deviation heatmaps  
-- 📄 Report with:
-  - Total samples analyzed
-  - Cluster breakdown
-  - Risk sample insights
-  - Key features and markers
-  - Suggested follow-ups
-
-## 🧪 Applications
-
-- 🏥 **Clinical Assessment** — Early cognitive disorder detection  
-- 🧘 **Mental Health Monitoring** — Track stress over time  
-- 💬 **Human-AI Interaction** — More responsive virtual assistants  
-- 📱 **Personal Well-being** — Self-monitor stress levels  
-- 📚 **Research** — Cognitive pattern studies across populations
-
-## ⚠️ Limitations
-
-- 🎙️ Clear audio needed for best results  
-- 🌐 Supports **English only** for now  
-
+Distributed under the MIT License.
